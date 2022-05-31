@@ -33,7 +33,7 @@ const FruitCart = (props: FruitCartProps) => {
           {props.amountOfPineapplesInCart > 0 && (
             <li>
               Pineapples: {props.amountOfPineapplesInCart}{" "}
-              <RemoveButton onClick={() => props.setAmountOfPineapplesInCart(props.amountOfApplesInCart - 1)}>
+              <RemoveButton onClick={() => props.setAmountOfPineapplesInCart(props.amountOfPineapplesInCart - 1)}>
                 [delete 1]
               </RemoveButton>
             </li>
@@ -41,7 +41,7 @@ const FruitCart = (props: FruitCartProps) => {
           {props.amountOfStrawberriesInCart > 0 && (
             <li>
               Strawberries: {props.amountOfStrawberriesInCart}{" "}
-              <RemoveButton onClick={() => props.setAmountOfStrawberriesInCart(props.amountOfApplesInCart - 1)}>
+              <RemoveButton onClick={() => props.setAmountOfStrawberriesInCart(props.amountOfStrawberriesInCart - 1)}>
                 [delete 1]
               </RemoveButton>
             </li>
@@ -49,7 +49,7 @@ const FruitCart = (props: FruitCartProps) => {
           {props.amountOfOrangesInCart > 0 && (
             <li>
               Oranges: {props.amountOfOrangesInCart}{" "}
-              <RemoveButton onClick={() => props.setAmountOfOrangesInCart(props.amountOfApplesInCart - 1)}>
+              <RemoveButton onClick={() => props.setAmountOfOrangesInCart(props.amountOfOrangesInCart - 1)}>
                 [delete 1]
               </RemoveButton>
             </li>
