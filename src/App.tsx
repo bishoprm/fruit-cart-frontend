@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Title, ButtonContainer, Button, LoadingContainer, LoadingFruit } from "./styles";
+const { REACT_APP_MY_ENV } = process.env;
 
 import axios from "axios";
 import qs from "qs";
@@ -14,7 +15,7 @@ export interface CalculatedPriceObject {
   total: number;
 }
 
-const apiUrl = "http://localhost:3000";
+const apiUrl = process.env.API_URL || "http://localhost:3000";
 
 function App() {
   const [loading, setLoading] = useState<boolean>(false);
