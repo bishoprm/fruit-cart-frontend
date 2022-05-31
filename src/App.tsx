@@ -14,10 +14,6 @@ export interface CalculatedPriceObject {
   total: number;
 }
 
-interface FruitObject {
-  [key: string]: number;
-}
-
 const apiUrl = "http://localhost:3000";
 
 function App() {
