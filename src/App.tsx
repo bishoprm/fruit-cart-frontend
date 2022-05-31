@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Title, ButtonContainer, Button, LoadingContainer, LoadingFruit } from "./styles";
-const { REACT_APP_MY_ENV } = process.env;
 
 import axios from "axios";
 import qs from "qs";
