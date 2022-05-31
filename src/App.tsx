@@ -14,7 +14,7 @@ export interface CalculatedPriceObject {
   total: number;
 }
 
-const apiUrl = process.env.API_URL || "http://localhost:3000";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:3000";
 
 function App() {
   const [loading, setLoading] = useState<boolean>(false);
